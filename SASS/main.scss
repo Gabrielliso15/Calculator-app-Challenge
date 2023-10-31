@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@700&display=swap');
+
+$colortheme1 : #3b4664;
+$colortheme2 : #e7e7e7;
+$colortheme3 : #17062b;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-color: $colortheme1;
+    display: grid;
+    place-items: center;
+
+    &.white{
+        background-color: $colortheme2;
+        transition: all 0.3s;
+    }
+
+    &.purple{
+        background-color: $colortheme3;
+        transition: all 0.3s;
+    }
+    
+}
+
+.attribution{
+    background-color: #252e42;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #647298;
+    font-size: 15px;
+
+    body.white &{
+        color: #373733;
+        transition: all 0.3s;
+    }
+
+    body.purple &{
+        color: #810fb9;
+        transition: all 0.3s;
+    }
+
+
+
+    a{
+        color: white;
+
+        body.white &{
+            color: #c85401;
+            transition: all 0.3s;
+        }
+
+        body.purple &{
+            color: #fbe068;
+            transition: all 0.3s;
+        }
+    }
+
+    body.white &{
+        background-color: #d2cecd;
+        transition: all 0.3s;
+    }
+
+    body.purple &{
+        background-color: #1d0836;
+        transition: all 0.3s;
+    }
+
+    .fa-brands{
+        padding: 10px 5px 10px 10px;
+        color: #ffffff;
+
+        body.white &{
+            color: #c85401;
+            transition: all 0.3s;
+        }
+
+        body.purple &{
+            color: #fbe068;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.calculadora{
+    background-color: $colortheme1;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 10px;
+    padding: 50px;
+
+
+    body.white &{
+        background-color: $colortheme2;
+        transition: all 0.3s;
+    }
+
+    body.purple &{
+        background-color: $colortheme3;
+        transition: all 0.3s;
+    }
+
+
+    .theme{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #ebe2db;
+        body.white &{
+            color: #252d44;
+            transition: all 0.3s;
+        }
+
+        body.purple &{
+            color: #e9d36a;
+            transition: all 0.3s;
+        }
+    }
+    .selectorN{
+        text-align: right;
+        color: #ebe2db;
+        font-size: 15px;
+        word-spacing: 15px;
+        padding-right: 3px;
+        body.white &{
+            color: #252d44;
+            transition: all 0.3s;
+        }
+        body.purple &{
+            color: #e9d36a;
+            transition: all 0.3s;
+        }
+    }
+
+    .themeselector{
+        display: grid;
+        justify-content: center;
+        align-items:center;
+        :hover{
+            cursor: pointer;
+        }
+        
+    }
+    .selector{
+        display: flex;
+        font-size: 8px;
+        align-items: center;
+
+        .selectorbutton{
+            height: 23px;
+            background-color: #252d44;
+            border-radius: 15px;
+            width: 70px;
+            border: 0;
+            display: flex;
+            padding: 5px;
+            align-items: center;
+            :hover{
+                cursor: pointer;
+            }
+
+            body.white &{
+                background-color: #d2cccb;
+                transition: all 0.3s;
+            }
+            body.purple &{
+                background-color: #1d0836;
+                transition: all 0.3s;
+            }
+            
+        }
+    }
+
+    .fa-solid{
+        color: #d23e30;
+        body.white &{
+            color: #c85500;
+            transition: all 0.3s;
+        }
+        body.purple &{
+            color: #00dece;
+            transition: all 0.3s;
+        }
+    }
+
+
+
+    .botonera{
+        background-color: #252d44;
+        padding: 30px;
+        border-radius: 20px;
+
+        body.white &{
+            background-color: #d4cdcd;
+            color: #393834;
+            transition: all 0.3s;
+        }
+
+        body.purple &{
+            background-color: #1d0836;
+            transition: all 0.3s;
+        }
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 0.2s;
+    }
+    .btn2:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 0.2s;
+    }
+
+    .btn{
+        height: 80px;
+        border-radius: 10px;
+        background-color: #ebe2db;
+        font-size: 40px;
+        color: #454955;
+        border: 0;
+        box-shadow: inset 0 -5px 0  #00000048;
+
+        body.purple &{
+            background-color: #311c4c;
+            color: #e9d36a;
+            transition: all 0.3s;
+            box-shadow: inset 0 -5px 0  #7c0bb4;
+        }
+    }
+
+    .del{
+        background-color: #647299;
+
+        body.white &{
+            background-color: #3b8087;
+            transition: all 0.3s;
+        }
+        body.purple &{
+            background-color: #54087f;
+            transition: all 0.3s;
+            box-shadow: inset 0 -5px 0  #7c0bb4;
+        }
+    }
+
+    .reset{
+        background-color: #647299;
+        body.white &{
+            background-color: #3b8087;
+            transition: all 0.3s;
+        }
+        body.purple &{
+            background-color: #54087f;
+            transition: all 0.3s;
+            box-shadow: inset 0 -5px 0  #7c0bb4;
+        }
+    }
+
+    .igual{
+        background-color: #d13f30;
+        body.white &{
+            background-color: #c85402;
+            transition: all 0.3s;
+        }
+        body.purple &{
+            background-color: #00dece;
+            transition: all 0.3s;
+        }
+    }
+
+    .btn2 {
+        height: 80px;
+        border-radius: 10px;
+        font-size: 25px;
+        color:#ebe2db ;
+        border: 0;
+        box-shadow: inset 0 -5px 0  #00000048;
+
+    }
+
+    .botones{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-bottom: 0;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .botones2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 10px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+
+    .pantalla{
+        display: flex; 
+        width: 100%;
+        justify-content: right; 
+        align-items: center;
+        background-color: #181f32;
+        border-radius: 15px;
+        font-size: 70px;
+        color: aliceblue;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        height: 130px;
+        white-space: nowrap; 
+        overflow: auto;
+
+        body.white &{
+            background-color: #efefef;
+            color: #393834;
+            transition: all 0.3s;
+        }
+
+        body.purple &{
+            background-color: #1d0836;
+            color: #e9d36a;
+            transition: all 0.3s;
+        }
+    }
+
+    // .pantallaSecundaria{
+    //     display: none;
+    //     @extend .pantalla;
+    // }
+}
+
+
+@media screen and (min-width: 768px) {
+    .calculadora{
+        width: 670px;
+
+        .btn{
+            height: 55px;
+        }
+
+        .btn2{
+            height: 55px;
+        }
+
+        .botonera{
+            padding: 20px;
+            height: 370px;
+            
+
+            .botones{
+                grid-template-columns: repeat(4, 120px); 
+                grid-template-rows: repeat(4, 50px);
+                gap: 15px; 
+            }
+            .botones2{
+                padding-top: 25px;
+                gap: 15px;
+                grid-template-columns: repeat(2, 255px); 
+            }
+        }
+    }
+    
+    
+
+}
